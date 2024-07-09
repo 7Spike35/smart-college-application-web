@@ -1,0 +1,32 @@
+major_name,description,R,I,A,S,E,C
+metallurgical engineering,applied discipline that studies the extraction of valuable metals or their compounds from ores and their processing into materials,0.8375,0.7713,0.1876,0.0766,0.0654,0.4788
+textile engineering,the basic knowledge and skills of textile design,0.8166,0.7344,0.1335,0.1033,0.0578,0.5123
+Biology,The scientific study of life and living organisms,0.7643,0.8763,0.1235,0.0988,0.0784,0.5432
+Sociology,The study of society social relationships and social institutions,0.5674,0.6785,0.1345,0.8765,0.0654,0.6532
+Food Science and Engineering,"It involves the application of engineering principles to food production and processing, ensuring food safety, quality, and nutrition.",0.3123,0.4523,0.1356,0.1384,0.1753,0.3571
+Environmental Science,"The interdisciplinary study of natural and artificial environments, focusing on understanding and solving environmental problems. ",0.3446,0.5794,0.1463,0.2753,0.1457,0.2587
+Costume design,"The art of creating clothing and accessories for characters in theater, film, television, and other performance arts. ",0.2467,0.2795,0.7967,0.2578,0.3571,0.1246
+"Business Administration","The study of managing a business or organization, covering areas such as finance, marketing, human resources, operations, and strategy. ",0.2345,0.3425,0.1235,0.3452,0.6892,0.4567
+Logistics management,"The process of planning, implementing, and controlling the efficient, effective flow and storage of goods, services, and related information from the point of origin to the point of consumption.",0.4352,0.3462,0.1234,0.2546,0.3568,0.5734
+Marketing,"The study and practice of promoting, selling, and distributing a product or service. ",0.1235,0.2456,0.3412,0.4812,0.6923,0.2653
+urban planning,The technical and political process concerned with the development and design of land use and the built environment,0.3412,0.4675,0.2316,0.3678,0.2346,0.3751
+applied mathematics,"The application of mathematical methods to solve practical problems in various fields such as science, engineering, business, and industry. ",0.4614,0.6712,0.1352,0.2751,0.1623,0.3571
+景观设计,景观设计,0.5,0.4,0.6,0.3,0.25,0.2
+建筑学,建筑学,0.6,0.5,0.55,0.3,0.4,0.25
+汉语言文学,汉语言文学,0.2,0.6,0.5,0.3,0.1,0.05
+应用数学,应用数学,0.6,0.7,0.2,0.1,0.3,0.05
+心理学,心理学,0.2,0.6,0.3,0.5,0.15,0.1
+人力资源管理,人力资源管理,0.4,0.2,0.1,0.6,0.7,0.3
+放射学,放射学,0.6,0.5,0.1,0.2,0.05,0.15
+食品学,食品学,0.5,0.4,0.2,0.3,0.6,0.1
+软件工程,软件工程,0.5,0.6,0.1,0.2,0.4,0.1
+护理学,护理学,0.6,0.4,0.3,0.7,0.2,0.1
+会计学,会计学,0.3,0.4,0.1,0.2,0.6,0.7
+交通管理,交通管理,0.5,0.4,0.2,0.3,0.5,0.4
+考古学,考古学,0.6,0.7,0.3,0.4,0.2,0.3
+哲学,哲学,0.1,0.8,0.4,0.3,0.1,0.2
+广告学,广告学,0.3,0.3,0.7,0.4,0.6,0.2
+电气工程,电气工程,0.7,0.6,0.2,0.3,0.4,0.5
+轻化工程,轻化工程,0.6,0.5,0.3,0.2,0.4,0.5
+物流工程,物流工程,0.6,0.4,0.2,0.3,0.5,0.5
+信息安全,信息安全,0.5,0.7,0.2,0.2,0.4,0.6

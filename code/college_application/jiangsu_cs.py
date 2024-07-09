@@ -23,11 +23,38 @@ url_yx = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?g
 url_yy = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=211b0900-74af-11e5-9532-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
 url_dw = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=ff1b8a64-76ed-11e5-9a86-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
 
+url_sx = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=044964c8-74b1-11e5-b379-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
+url_wlw = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=538727dc-74b1-11e5-9370-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
+url_kqz = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=bb62aeb6-74b2-11e5-b379-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
+url_tm = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=561da516-74b1-11e5-b379-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
+url_yxy = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=0cd01c66-74b3-11e5-b379-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
+url_sj = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=0b862b28-60e3-11e9-a1c1-f8f21e345dfc&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
+url_jr = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=2d05f290-74b2-11e5-9370-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
+url_wl = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=4a4739cc-74b2-11e5-bdc1-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
+url_xxa = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=7c22d302-74b2-11e5-88e2-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
+url_sw = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=aa6c2214-74b1-11e5-a987-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
+url_hx = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=0adf7200-74b1-11e5-88bb-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
+url_gs = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=d6fdd52e-74b2-11e5-b379-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
+url_xq = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=59722210-74b5-11e5-b379-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
+url_sp = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=9eada5ce-74b1-11e5-88bb-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
+url_cl = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=341f9e24-74b1-11e5-ad01-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
+url_mz = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=0b877750-74b3-11e5-88bb-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
+url_dzs = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=f807834c-74b1-11e5-b379-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
+url_xl = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=240e33b0-74b1-11e5-a987-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
+url_sjx = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=e1f26112-74b1-11e5-a987-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
+url_jz = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=a52ec284-74b1-11e5-88bb-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
+url_ly = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=e90a2a88-74b2-11e5-9532-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
+url_lcy ="https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=ee753ad8-74b4-11e5-b379-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
+url_zc = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=dc73f732-74b1-11e5-ad01-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
+url_xny = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=68b2e3fc-74b2-11e5-b379-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
+url_tj = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=26976b9c-74b1-11e5-b379-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
+url_ls = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=ff0507e2-74b0-11e5-bdc1-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
+
 headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36'
 }
 
-page = requests.get(url=url_dw, headers=headers).json()
+page = requests.get(url=url_ls, headers=headers).json()
 data = page["data"]
 dataSource_list = data["data"]["dataSource"]
 
@@ -35,5 +62,5 @@ dataSource_list = data["data"]["dataSource"]
 for dataSource in dataSource_list:
         with open('data.csv', 'a+', newline="") as file:
                 writer = csv.writer(file)
-                writer.writerow(["动物医学",dataSource['college'], dataSource['low_score'], dataSource['elective_info'],dataSource['low_rank']])
+                writer.writerow(["历史学",dataSource['college'], dataSource['low_score'], dataSource['elective_info'],dataSource['low_rank']])
 
