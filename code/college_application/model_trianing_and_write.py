@@ -4,7 +4,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
 from transformers import BertTokenizer, BertModel
-import torch
 
 # 假设我们有一个数据集，包含专业名称、描述和六项指数
 data = pd.read_csv('subject.csv')
@@ -21,10 +20,12 @@ subject_list.extend(df[column_name].unique())
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 bert_model = BertModel.from_pretrained('bert-base-uncased')
 
+
 def get_bert_embedding(text):
     inputs = tokenizer(text, return_tensors='pt', max_length=512, truncation=True, padding='max_length')
     outputs = bert_model(**inputs)
     return outputs.last_hidden_state.mean(dim=1).detach().numpy()
+
 
 # 获取专业描述的BERT嵌入
 data['bert_embedding'] = data['description'].apply(get_bert_embedding)
@@ -50,10 +51,10 @@ print(f'Mean Squared Error: {mse}')
 
 # 使用模型预测新专业的霍兰德六项指数
 for i in subject_list:
-    new_major_description = (i)
+    new_major_description = i
     new_major_embedding = get_bert_embedding(new_major_description)
     predicted_indices = rf_model.predict(new_major_embedding)
-    csv_file_path = 'subject_1.csv'
+    csv_file_path = 'data_subject_holland.csv'
     df = pd.read_csv(csv_file_path)
     new_row = {
         'subject': i,

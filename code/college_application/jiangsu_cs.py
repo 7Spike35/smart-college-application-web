@@ -44,23 +44,22 @@ url_xl = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?g
 url_sjx = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=e1f26112-74b1-11e5-a987-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
 url_jz = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=a52ec284-74b1-11e5-88bb-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
 url_ly = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=e90a2a88-74b2-11e5-9532-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
-url_lcy ="https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=ee753ad8-74b4-11e5-b379-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
+url_lcy = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=ee753ad8-74b4-11e5-b379-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
 url_zc = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=dc73f732-74b1-11e5-ad01-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
 url_xny = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=68b2e3fc-74b2-11e5-b379-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
 url_tj = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=26976b9c-74b1-11e5-b379-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
 url_ls = "https://gk.quark.cn/api/fractional/precedence/getPrecedenceScoreData?guid=ff0507e2-74b0-11e5-bdc1-d43d7e6fab60&type=0&batchType=%E6%9C%AC%E7%A7%91&province=%E6%B1%9F%E8%8B%8F&year=2023&batch=%E6%9C%AC%E7%A7%91%E6%89%B9&genre="
 
 headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36'
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36'
 }
 
 page = requests.get(url=url_ls, headers=headers).json()
 data = page["data"]
 dataSource_list = data["data"]["dataSource"]
 
-
 for dataSource in dataSource_list:
-        with open('data.csv', 'a+', newline="") as file:
-                writer = csv.writer(file)
-                writer.writerow(["历史学",dataSource['college'], dataSource['low_score'], dataSource['elective_info'],dataSource['low_rank']])
-
+    with open('data.csv', 'a+', newline="") as file:
+        writer = csv.writer(file)
+        writer.writerow(["历史学", dataSource['college'], dataSource['low_score'], dataSource['elective_info'],
+                         dataSource['low_rank']])
