@@ -1,0 +1,87 @@
+   
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/nav.css' %}"/>
+    <style>
+        body {  
+            font-family: Arial, sans-serif;  
+            margin: 40px;  
+        }  
+        .question-input {  
+            position: absolute;  
+            top: 10px;  
+            right: 400px;  
+            background-color: lightblue;  
+            padding: 10px;  
+        }  
+        #answer {  
+            position: absolute;  
+            top: 300px;  
+            right: 200px;    
+            color: green;  
+            padding: 10px;
+        }
+        
+        .btn {
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            margin-top: 40px;
+            background-image: linear-gradient(to right, #a6c1ee, #fbc2eb);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+  <ul>
+    <li><a href="#">首页</a></li>
+    <li><a href="#">历史分析记录</a></li>
+    <li class="dropdown">
+      <a href="#">获取分析结果</a>
+      <ul class="submenu">
+          <li><a href="#">信息收集</a></li>
+          <li><a href="#">结果页</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        <main class="content">
+            <h1></h1>
+            <p></p>
+        </main>
+    </div>
+
+    <!-- 引入JavaScript（如果需要处理下拉菜单） -->
+    <!-- <script src="script.js"></script> -->
+
+
+<!--人机问答模块-->  
+        <div class="question-input">  
+            <label for="userQuestion">请输入您的问题：</label>  
+            <input type="text" id="userQuestion" name="userQuestion">  
+            <button class="btn" onclick="showAnswer()">提交</button>  
+        </div>  
+        
+        <div id="answer">  
+            <!-- 初始时没有答案 -->  
+            <script>  
+                function showAnswer() {  
+                    var question = document.getElementById('userQuestion').value;  
+                    // 这里我们暂时只显示一个静态的回答  
+                    // 实际应用中，这里可以替换为根据问题动态生成的回答  
+                    var answer = "这是一个示例回答，实际上我们需要根据您的问题来给出更具体的答案。";  
+                    
+                    // 显示回答  
+                    document.getElementById('answer').innerHTML = answer;  
+                }  
+            </script>  
+</body>
+</html>

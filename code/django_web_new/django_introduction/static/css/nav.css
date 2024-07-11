@@ -1,0 +1,93 @@
+/* 通用样式 */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 20%; /* 导航栏宽度 */
+  background: #f4f4f4;
+  padding: 20px 0;
+  box-sizing: border-box;
+  height: 100vh; /* 导航栏高度与视窗相同 */
+  overflow-y: auto; /* 如果内容超出高度，允许滚动 */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 10px 20px; /* 给链接一些内边距 */
+  border-bottom: 1px solid #ddd; /* 链接之间的分隔线 */
+}
+
+.sidebar ul li:last-child {
+  border-bottom: none; /* 移除最后一个链接底部的分隔线 */
+}
+
+/* 子菜单样式 */
+.submenu {
+  display: none; /* 默认隐藏子菜单 */
+  position: relative; /* 根据需要调整 */
+  padding-left: 20px; /* 子菜单缩进 */
+}
+
+/* 可以通过JavaScript或CSS的:hover伪类来显示子菜单 */
+/* 这里仅展示CSS的:hover伪类示例，但请注意，它可能不适用于所有情况（如子菜单项很多时） */
+.dropdown:hover .submenu {
+  display: block; /* 鼠标悬停在dropdown上时显示子菜单 */
+}
+
+/* 链接样式 */
+.sidebar ul li a {
+  text-decoration: none; /* 移除下划线 */
+  color: #333; /* 链接颜色 */
+}
+
+.sidebar ul li a:hover {
+  color: #007bff; /* 链接悬停颜色 */
+}
+
+.content {
+    /* ... content样式 ... */
+    margin-left: 220px; /* 假设导航栏宽度为200px，加上一些间距 */
+    padding: 20px;
+      /* 内容区样式 */
+    background-image: url('picture.png'); /* 替换为你的图片URL */
+    background-position: top center; /* 图片顶部居中 */
+    background-size: cover; /* 覆盖整个内容区，但可能会裁剪 */
+    background-repeat: no-repeat; /* 不重复 */
+    height: 400px; /* 根据需要调整内容区高度 */
+    /* ... 其他内容区样式 ... */
+  }
+    
+
+
+  /* 高考人数信息标题样式 */
+  .headline {
+    font-family: 'Arial', sans-serif; /* 设置字体为Arial，如果未安装则回退到sans-serif */
+    font-size: 30px; /* 设置字体大小 */
+    font-weight: bold; /* 设置字体加粗 */
+    color: black; /* 设置默认字体颜色为黑色（如果需要的话）*/
+  }
+
+  /* 特定数字样式 */
+  .number {
+    color: red; /* 文本颜色为红色 */
+    font-weight: normal; /* 如果需要，可以覆盖继承的加粗样式 */
+  }
+
+    /* 容器样式 */
+  .container {
+    display: flex;
+    flex-direction: column; /* 子元素垂直排列 */
+    margin: 0;
+    padding: 0;
+    width: 100%; /* 容器宽度占满整个视口 */
+  }
+
+

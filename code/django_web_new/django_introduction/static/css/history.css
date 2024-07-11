@@ -1,0 +1,126 @@
+/* 通用样式 */
+.container {
+    display: flex; /* 使用flex布局 */
+    margin: 0;
+    padding: 0;
+    width: 100%; /* 容器宽度占满整个视口 */
+    height: 100vh; /* 可选：使容器高度占满视口高度 */
+  }
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 20%; /* 导航栏宽度 */
+  background: #f4f4f4;
+  padding 5em;
+  box-sizing: border-box;
+  height: 100vh; /* 导航栏高度与视窗相同 */
+  overflow-y: auto; /* 如果内容超出高度，允许滚动 */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  height: 40px;
+  padding: 10px 20px; /* 给链接一些内边距 */
+  border-bottom: 1px solid #ddd; /* 链接之间的分隔线 */
+}
+
+.sidebar ul li:last-child {
+  border-bottom: none; /* 移除最后一个链接底部的分隔线 */
+}
+
+/* 子菜单样式 */
+.submenu {
+  display:none ; /* 默认隐藏子菜单 */
+  position: relative; /* 根据需要调整 */
+  padding-left: 20px; /* 子菜单缩进 */
+  bottom: -25px;
+}
+
+/* 可以通过JavaScript或CSS的:hover伪类来显示子菜单 */
+/* 这里仅展示CSS的:hover伪类示例，但请注意，它可能不适用于所有情况（如子菜单项很多时） */
+.dropdown:hover .submenu {
+  display: block; /* 鼠标悬停在dropdown上时显示子菜单 */
+}
+
+/* 链接样式 */
+.sidebar ul li a {
+  text-decoration: none; /* 移除下划线 */
+  color: #333; /* 链接颜色 */
+}
+
+.sidebar ul li a:hover {
+  color: #007bff; /* 链接悬停颜色 */
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 仅在单列布局时有效，但这里用于与flex-direction配合 */
+    height: 100vh; /* 使容器高度占满整个视口，用于垂直居中效果 */
+    text-align: center; /* 水平居中（对于非flex项目，如按钮） */
+    padding: 20px; /* 添加一些内边距以避免内容紧贴边缘 */
+}
+
+table {
+    width: 80%; /* 表格宽度为容器宽度的80% */
+    border-collapse: collapse;
+    margin-bottom: 20px; /* 与按钮保持一些距离 */
+}
+
+th, td {
+    border: 2px solid black; /* 边框为黑色 */
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+table {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%); /* 向左和向上移动自身宽高的50%，实现居中 */
+    width: 60%; /* 或任何你想要的宽度 */
+    height:50%;
+}
+
+
+button {
+    margin: 0 auto; /* 使按钮在其父容器中水平居中 */
+}
+
+.content {
+    flex: 3; /* 内容区占据可用空间的3份 */
+    padding: 50px,50px;
+    overflow-y: auto; /* 如果内容过多，允许滚动 */
+            /* 添加背景图片 */
+    background-image: url("C:\Users\29406\django_introduction\static\png\history.png"); /* 替换为你的图片URL */
+    background-size: cover; /* 确保图片覆盖整个区域，可能会裁剪 */
+    background-position: center; /* 图片居中显示 */
+    /* 如果需要，可以添加以下属性来防止内容文本与背景图片重叠时难以阅读 */
+    color: white; /* 文本颜色改为白色或其他对比度高的颜色 */
+    /* 可选：添加一些内边距或文本阴影以增强可读性 */
+        /* 添加背景图片 */
+
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* 响应式设计（可选） */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* 小屏幕时改为垂直布局 */
+    }
+}
