@@ -23,5 +23,7 @@ urlpatterns = [
     path('user/',include('user.urls')),
     path('login/',include('login.urls')),
     path('home/',include('home.urls')),
-    path('question/',include('question.urls')),
+    path('questions/',include('questions.urls')),
+    path('info/',include('info.urls')),
+    path('history/',include('history.urls')),
 ]

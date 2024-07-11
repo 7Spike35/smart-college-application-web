@@ -1,5 +1,6 @@
 
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -75,7 +76,7 @@
     </style>
 </head>
 <body>
-    <img src="logo.png" class="logo" >
+    <img src="{% static 'png/logo.png' %}" class="logo" >
     <div class="container">
         <div class="login-wrapper">
             <div class="header">Sign up</div>

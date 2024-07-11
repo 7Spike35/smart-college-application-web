@@ -1,31 +1,39 @@
-
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
-    <style>
-
-    </style>
+    <title>导航栏与内容区</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/homepage.css' %}"/>
 </head>
-<body>
-    <link rel="stylesheet" href="nav.css">
-    <!-- 导航栏 -->
-    <nav class="sidebar">
-    <!-- ... 导航栏内容 ... -->
-        <ul>
-        <li>首页</li>
-        <li>历史分析记录</li>
-        <li class="dropdown">
-            获取分析结果
-            <ul class="submenu">
-            <li>信息收集与结果</li>
-            <li>问题页</li>
-            </ul>
-        </li>
-        </ul>
-    </nav>
+<body background="{% static 'png/homepage.png' %}"
+               style="background-repeat:no-repeat
+               background-attachment:fixed;
+               background-size:100% 100%; ">
+      
+      
+    <div class="container">
+        <nav class="sidebar">
+  <ul>
+    <li><a href="{% url 'home' %}">首页</a></li>
+    <li><a href="{% url 'history' %}">历史分析记录</a></li>
+    <li class="dropdown">
+      <a href="#">获取分析结果</a>
+      <ul class="submenu">
+          <li><a href="{% url 'info' %}">信息收集</a></li>
+          <li><a href="{% url 'questions' %}">问题页</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        <main class="content">
+            <h1></h1>
+            <p></p>
+        </main>
+    </div>
+
+    <!-- 引入JavaScript（如果需要处理下拉菜单） -->
+    <!-- <script src="script.js"></script> -->
 </body>
 </html>
