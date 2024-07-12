@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分析结果</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/back.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/contact_us.css' %}">
+</head>
+<body>
+    <link rel="stylesheet" href="{% static 'css/output.css' %}">
+    <div class="card">
+        <div class="card-overlay"></div>
+        <div class="card-inner">
+
+                <p>根据兴趣测试推荐的专业：{{ answer1 }}</p>
+
+        </div>
+    </div>
+
+    <div class="card1">
+        <div class="card-overlay1"></div>
+        <div class="card-inner1">
+
+                <p>综合考虑，推荐以下选择：{{ answer2 }}</p>
+        </div>
+    </div>
+<a class="fancy" href="{% url 'home' %}">
+    <button class="btn"> Back
+</button>
+</a>
+<div class="container noselect">
+  <div class="canvas">
+    <div class="tracker tr-1"></div>
+    <div class="tracker tr-2"></div>
+    <div class="tracker tr-3"></div>
+    <div class="tracker tr-4"></div>
+    <div class="tracker tr-5"></div>
+    <div class="tracker tr-6"></div>
+    <div class="tracker tr-7"></div>
+    <div class="tracker tr-8"></div>
+    <div class="tracker tr-9"></div>
+    <div class="tracker tr-10"></div>
+    <div class="tracker tr-11"></div>
+    <div class="tracker tr-12"></div>
+    <div class="tracker tr-13"></div>
+    <div class="tracker tr-14"></div>
+    <div class="tracker tr-15"></div>
+    <div class="tracker tr-16"></div>
+    <div class="tracker tr-17"></div>
+    <div class="tracker tr-18"></div>
+    <div class="tracker tr-19"></div>
+    <div class="tracker tr-20"></div>
+    <div class="tracker tr-21"></div>
+    <div class="tracker tr-22"></div>
+    <div class="tracker tr-23"></div>
+    <div class="tracker tr-24"></div>
+    <div class="tracker tr-25"></div>
+    <div id="card">
+      <p id="prompt">CONTACT US</p>
+      <div class="title">
+        <p>Spike35713@gmail.com</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+
+</html>
