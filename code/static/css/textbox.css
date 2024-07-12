@@ -1,0 +1,69 @@
+.card {
+  width: 400px;
+  height: 500px;
+  background: rgb(183, 226, 25);
+  font-family: inherit;
+  position: relative;
+  border-radius: 8px;
+  float: left;
+  margin: 2.5%
+}
+
+.quote {
+  color: rgb(223, 248, 134);
+  padding-left: 30px;
+  position: relative;
+}
+
+.card-name {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(127, 155, 29);
+  padding: 35px;
+  line-height: 23px;
+}
+
+.body-text {
+  font-size: 20px;
+  font-weight: 900;
+  padding: 60px 40px 0;
+  color: #465512;
+  position: absolute;
+  top: 40px;
+  left: 1px;
+  line-height: 23px;
+}
+
+.author {
+  margin-top: 200px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.card:hover .author {
+  opacity: 1;
+}
+
+.pic {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(158, 196, 21);
+  border-radius: 50%;
+}
+
+.author-container {
+  display: flex;
+  align-items: center;
+}
+
+.author {
+  font-weight: 700;
+  color: rgb(127, 155, 29);
+  padding-left: 30px;
+}
+
+.card .author svg {
+  display: inline;
+  font-size: 12px;
+  color: rgba(128, 155, 29, 0.452);
+}

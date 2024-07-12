@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>问题页</title>
+    <style>
+        body {  
+            font-family: Arial, sans-serif;  
+            margin: 40px;  
+        }  
+        .question-input {  
+            position: absolute;  
+            top: 0px;
+            left: 380px;
+            background-color: lightblue;  
+            padding: 10px;
+            width: 1480px;
+            height: 1000px;
+        }  
+        #answer {  
+            position: absolute;  
+            top: 300px;  
+            right: 200px;    
+            color: green;  
+            padding: 10px;
+        }
+        
+        .btn {
+            text-align: center;
+            padding: 10px;
+            width: 20%;
+            margin-top: 40px;
+            background-image: linear-gradient(to right, #a6c1ee, #fbc2eb);
+            color: #fff;
+            left: 25%;
+        }
+        .image{
+            position: relative;
+            top: 0px;
+            right: 0%;
+        }
+        .msg {
+            text-align: center;
+            line-height: 88px;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            --color: #E1E1E1;
+            background-color: #F3F3F3;
+            background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+            linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+            background-size: 55px 55px;
+        }
+    </style>
+</head>
+    <div class="container">
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+    <nav class="sidebar">
+        <ul>
+        <li><a href="{% url 'home' %}">首页</a></li>
+        <li><a href="{% url 'history' %}">历史分析记录</a></li>
+        <li class="dropdown">
+          <a href="#">获取分析结果</a>
+          <ul class="submenu">
+              <li><a href="{% url 'info' %}">信息收集</a></li>
+              <li><a href="{% url 'questions' %}">问题页</a></li>
+          </ul>
+        </li>
+        </ul>
+    </nav>
+
+            <main class="content">
+            <h1></h1>
+            <p></p>
+        </main>
+
+
+
+    <div class="question-input">
+        <h1>Get Career Advice</h1>
+    <form method="post">
+        {% csrf_token %}
+        <link rel="stylesheet" href="{% static 'css/input.css' %}">
+        <div class="group">
+            <input required="" type="text" name="interest" class="input">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>霍兰德测试结果</label>
+        </div>
+        <input class="btn" type="submit" value="提交">
+    </form>
+    {% if advice1 %}
+        <h2>Career Advice:</h2>
+        <p>{{ advice1 }}</p>
+    {% endif %}
+    <h1>Get Major Introduction</h1>
+    <form method="post">
+        {% csrf_token %}
+        <div class="group">
+            <input required="" type="text" name="major" class="input">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>输入一个专业名称</label>
+        </div>
+        <input class="btn" type="submit" value="提交">
+    </form>
+    {% if advice2 %}
+        <h3>Major Introduction:</h3>
+        <p>{{ advice2 }}</p>
+    {% endif %}
+    </div>
+        </div>
+</html>
