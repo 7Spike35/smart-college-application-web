@@ -1,16 +1,30 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Analy</title>
+
 </head>
 <body>
-    {% if answer1 %}
-        <p>{{ answer1 }}</p>
-    {% endif %}
-    {% if answer2 %}
-        <p>{{ answer2 }}</p>
-    {% endif %}
+    <link rel="stylesheet" href="{% static 'css/output.css' %}">
+    <div class="card">
+        <div class="card-overlay"></div>
+        <div class="card-inner">
+
+                <p>{{ answer1 }}</p>
+
+        </div>
+    </div>
+
+    <div class="card1">
+        <div class="card-overlay1"></div>
+        <div class="card-inner1">
+
+                <p>{{ answer2 }}</p>
+        </div>
+    </div>
+      
 </body>
 
 
