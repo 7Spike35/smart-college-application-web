@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>history</title>
+</head>
+<body>
+
+    <link rel="stylesheet" href="{% static 'css/historyinfo.css' %}">
+    <div class="card">
+        <div class="info">
+          <p class="title">Record</p>
+          <p>{{ res }}</p>
+        </div>
+        <div class="footer">
+            <a href="{% url 'info'%}">
+                <p class="tag">信息收集 </p>
+            </a>
+            <a href="{% url 'home'%}">
+                <button type="button" class="action">Home </button>
+            </a>
+        </div>
+    </div>
+        
+</body>
+
+
+</html>
